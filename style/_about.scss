@@ -1,0 +1,504 @@
+.about{
+    padding-top: 85px;
+    padding-bottom: 55px;
+    & .box-container{
+        display: flex;
+        flex-direction: column;
+        & .about-top{
+            flex-shrink: 0;
+            margin-right: auto;
+            display: flex;
+            gap:65px;
+            width: calc(100% - 25%);
+            align-items: flex-start;
+            & .nav{
+                padding-bottom: 200px;
+                &-name{
+                    text-align: left;
+                }
+            }
+           & .about-detail{
+               width: calc(100% - 265px - 65px) ;
+               & .name-company{
+                   font-size: 26px;
+                   font-weight: 400;
+                   text-transform: uppercase;
+                   margin-bottom: 20px;
+               }
+               & .title{
+                   margin-bottom: 40px;
+               }
+               & .about-content{
+                   color: $color2;
+                   line-height: 1.5;
+                   font-size: 18px;
+               }
+               & .link-about{
+                border: 1px solid red;
+                color:$color2;
+                margin: 30px 0;
+                &:hover{
+                    color:$color1;
+                }       
+               }
+           }
+        }
+        & .about-bottom{
+            flex-shrink: 0;
+            display: flex;
+            gap:60px;
+            width: 90%;
+            max-height: calc(1080px - 560px);
+            margin-left: auto;
+            position: relative;
+            right: 0;
+            top:-150px;
+            & .image{
+                flex:1 1 70%;
+                object-fit: cover;
+            }
+            & .about-infors{
+                flex:1 1 30%;
+                display: flex;
+                flex-direction: column;    
+                
+                & .infor{
+                    font-size: 20px;
+                    padding-bottom: 30px;
+                    margin-bottom: 15px;
+                    & .about-bottom-title{
+                        font-size: 30px;
+                        color: $color4;
+                        margin-bottom: 10px;
+                    }
+                }
+                & .infor:first-child{
+                    border-bottom: 1px solid rgba(207, 202, 202, 0.445);
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1365px){
+    .about{
+        padding-top: 85px;
+        padding-bottom: 55px;
+        max-height: 1080px;
+        & .box-container{   
+            & .about-top{
+                margin-right: auto;
+                display: flex;
+                gap:50px;
+                width: 100%;
+                align-items: flex-start;
+                & .nav{
+                    height: 450px;
+                    width: 230px;
+                    padding-bottom: 150px;
+                    &-name{
+                        text-align: center;
+                    }
+                }
+                & .about-detail{
+                    width: calc(100% - 50px - 230px);
+                    & .name-company{
+                        font-size: 24px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+                   
+                }
+            }
+            & .about-bottom{         
+                right: 0;
+                top:-100px;
+                width: 90%;
+                gap:55px;
+                & .image{
+                    width: calc(70% - 55px);
+                    object-fit: cover;
+                }
+                & .about-infors{
+                    width: 30%;
+                    & .infor{
+                        font-size: 18px;
+                        padding-bottom: 30px ;
+                        margin-bottom: 10px;
+                        & .about-bottom-title{
+                            font-size: 28px;
+                            color: $color4;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    & .infor:first-child{
+                        border-bottom: 1px solid rgba(207, 202, 202, 0.445);
+                        width: 100%;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+@media screen and (max-width:1279px){
+    .about{
+        padding-top: 85px;
+        padding-bottom: 55px;
+        max-height: 1080px;
+        & .box-container{   
+            & .about-top{
+                margin-right: auto;
+                display: flex;
+                gap:50px;
+                width: 100%;
+                align-items: flex-start;
+                & .nav{
+                    height: 450px;
+                    width: 230px;
+                    padding-bottom: 150px;
+                    &-name{
+                        text-align: center;
+                    }
+                }
+                & .about-detail{
+                    width: calc(100% - 50px - 230px);
+                    & .name-company{
+                        font-size: 24px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+                   
+                }
+            }
+            & .about-bottom{         
+                right: 0;
+                top:-100px;
+                width: 90%;
+                gap:30px;
+                & .image{
+                    width: calc(70% - 50px);
+                    object-fit: cover;
+                }
+                & .about-infors{
+                    width: 30%;
+                    & .infor{
+                        font-size: 18px;
+                        padding-bottom: 30px ;
+                        margin-bottom: 10px;
+                        & .about-bottom-title{
+                            font-size: 28px;
+                            color: $color4;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    & .infor:first-child{
+                        border-bottom: 1px solid rgba(207, 202, 202, 0.445);
+                        width: 100%;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+@media screen and (max-width:1023px){
+    .about{
+        padding-top: 85px;
+        padding-bottom: 55px; 
+        & .box-container{   
+            & .about-top{
+                margin-right: auto;
+                display: flex;
+                gap:40px;
+                width: 100%;
+                align-items: flex-start;
+                margin-bottom: 30px;
+                & .nav{
+                    height: 450px;
+                    width: 200px;
+                    padding: 15px 30px;
+                    &-name{
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                }
+                & .about-detail{
+                    width: calc(100% - 40px - 200px);
+                    & .name-company{
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+                    & .title{
+                        font-size: 30px;
+                        margin-bottom: 30px;
+                    }
+                    & .about-content{
+                        color: $color2;
+                        line-height: 1.3;
+                        font-size:18px;      
+                }
+                }
+            }
+            & .about-bottom{         
+                right: 0;
+                top:-100px;
+                margin-left: auto;
+                
+                gap:40px;
+                & .image{
+                    width: calc(70% - 40px);
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+                & .about-infors{
+                    width: 30%;
+                    & .infor{
+                        font-size: 18px;
+                        padding: 30px 0;
+                        margin-bottom: 10px;
+                        & .about-bottom-title{
+                            font-size: 28px;
+                            color: $color4;
+                            margin-bottom: 10px;
+                        }
+                        
+                    }
+                    & .infor:first-child{
+                        border-bottom: 1px solid rgba(207, 202, 202, 0.445);
+                        width: 100%;
+                    }
+                }
+            }
+        }   
+    }
+}
+@media screen and (max-width:992px){
+    .about{
+        padding-top: 40px;
+        padding-bottom: 30px; 
+        & .box-container{   
+            & .about-top{
+                margin-right: auto;
+                display: flex;
+                gap:40px;
+                width: 100%;
+                align-items: flex-start;
+                margin-bottom: 30px;
+                & .nav{
+                    height: 400px;
+                    width: 220px;
+                    padding-bottom: 100px;
+                    &-name{
+                        text-align: center;
+                    }
+                }
+                & .about-detail{
+                    width: calc(100% - 40px - 220px);
+                    & .name-company{
+                        font-size: 22px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+                    & .title{
+                        margin-bottom: 30px;
+                        font-size: 30px;
+                    }
+                    & .about-content{
+                        color: $color2;
+                        line-height: 1.3;
+                        font-size: 16px;
+                    }
+                    & .link-about{
+                        border: 1px solid red;
+                        color:$color2;
+                        margin: 20px 0;
+                      
+                }
+            }
+            
+           
+            }
+            & .about-bottom{         
+               
+                gap:45px;
+                & .image{
+                    width: calc(70% - 45px);
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+                & .about-infors{
+                    width: 30%;
+                    & .infor{
+                        font-size: 18px;
+                        padding: 20px 0;
+                        margin-bottom: 10px;
+                        & .about-bottom-title{
+                            font-size: 24px;
+                            color: $color4;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:879px){
+    .about{
+        padding-top: 40px;
+        padding-bottom: 30px; 
+        & .box-container{   
+            & .about-top{
+                margin-right: auto;
+                display: flex;
+                gap:40px;
+                width: 100%;
+                align-items: flex-start;
+                margin-bottom: 30px;
+                & .nav{
+                    height: 400px;
+                    width: 200px;
+                    padding-bottom: 100px;
+                    &-name{
+                        text-align: center;
+                    }
+                }
+                & .about-detail{
+                    width: calc(100% - 40px - 200px);
+                    & .name-company{
+                        font-size: 22px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+                    & .title{
+                        margin-bottom: 30px;
+                        font-size: 30px;
+                    }
+                    & .about-content{
+                        color: $color2;
+                        line-height: 1.3;
+                        font-size: 16px;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 4;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    & .link-about{
+                        border: 1px solid red;
+                        color:$color2;
+                        margin: 20px 0;
+                      
+                }
+            }
+            
+           
+            }
+            & .about-bottom{         
+                right: 0;
+                top:0;
+                width: 100%;
+                gap:40px;
+                & .image{
+                    width: calc(70% -  40px);
+                    object-fit: cover;
+                }
+                & .about-infors{
+                    width: 30%;
+                    & .infor{
+                        font-size: 18px;
+                        padding: 20px 0;
+                        margin-bottom: 10px;
+                        & .about-bottom-title{
+                            font-size: 24px;
+                            color: $color4;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .about{
+        padding-top: 40px;
+        padding-bottom: 30px; 
+        & .box-container{   
+            display: flex;
+            flex-direction: column;
+            & .about-top{
+                flex:1;
+                margin-right: auto;
+                display: flex;
+                gap:40px;
+                width: 100%;     
+                margin-bottom: 20px;
+                & .nav{      
+                    width: 150px;
+                    height: 400px;
+                    padding-bottom: 60px;
+                    &-name{
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                }
+                & .about-detail{
+                    width: calc(100% - 40px - 150px);
+                    & .name-company{
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+                    & .title{
+                        margin-bottom: 30px;
+                        font-size: 24px;
+                    }
+                    & .about-content{
+                        color: $color2;
+                        line-height: 1.3;
+                        font-size: 16px;
+                      
+                    }
+                    & .link-about{
+                        border: 1px solid red;
+                        color:$color2;
+                        margin: 20px 0;
+                      
+                }
+                }
+            }
+            & .about-bottom{   
+                flex-shrink: 0;      
+                right: 0;
+                top:0;
+                width: 100%;
+                & .image{
+                    width: calc(70%-30px);
+                    object-fit: cover;
+                }
+                & .about-infors{
+                    width: 30%;
+                    & .infor{
+                        font-size: 18px;
+                        padding: 20px 0;
+                        margin-bottom: 10px;
+                        & .about-bottom-title{
+                            font-size: 24px;
+                            color: $color4;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

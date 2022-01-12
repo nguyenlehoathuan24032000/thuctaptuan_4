@@ -1,0 +1,432 @@
+footer{
+    & .footer-top{   
+        background: #2c2b3b;
+        & .box-container{
+            & .wrap-footer-top{
+                padding: 90px 0;
+                & .footer-contact{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: $color1;
+                    margin-bottom: 90px;
+                     & .title{
+                         margin-bottom: 30px;
+                         color: $color1;
+                     }
+                     & .sub-title{
+                         font-size: 24px;
+                         text-transform: uppercase;
+                     }
+                 }
+                 & .logo-footer{
+                     margin-bottom: 60px;
+                     width: 215px;
+                     height: 115px;
+                     object-fit: cover;
+                     filter: invert(25%) sepia() saturate(100000%) hue-rotate(0deg);
+                 }
+                 & .form-contact{
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: stretch;
+                    flex-wrap: wrap;
+                    gap:30px;
+                     & .footer-infor{
+                         color: $color1;
+                         flex:1 1 50%;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-between;
+                         & .footer-title{
+                             text-transform: uppercase;
+                             font-size: 24px;
+                             margin-bottom: 40px;
+                         }
+                         & .infor-item{
+                             margin-bottom: 30px;
+                             display: flex;
+                             color:$color1;
+                             align-items: center;
+                             text-transform: capitalize;
+                             font-size: 18px;
+                             color: $color5;
+                             & #icon_footer{
+                                 margin-right: 20px;
+                                 color: $color1;
+                             }
+                             & p{
+                                 line-height: 1.5;
+                             }
+                             
+                         }
+                         & .input-email{
+                             display: flex;
+                            align-items: center;
+                            position: relative;
+                            max-width: 500px;
+                             & input{
+                                 padding: 25px;
+                                 background:#22222d ;
+                                 color: $color5;
+                                 width: 100%;
+                                 font-size: 16px;
+                                 &::placeholder{
+                                    font-style: italic;
+                                 }
+                             }
+                             & #icon-air{
+                                 position: absolute;
+                                 top:0;
+                                 right: 0;
+                                 height: 100%;
+                                 width: 80px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                 background: red;
+                                 font-size: 34px;
+                                 transition: 0.2s;
+                                 cursor: pointer;
+                                 &:hover{
+                                     transform: scale(1.1);
+                                 }
+                             }
+                         }
+                     }   
+                     & .footer-form{
+                         flex:1 1 calc(50% - 30px);     
+                         & .input-box{
+                             display: flex;
+                             justify-content: space-between;
+                             gap:30px;
+                             & input{
+                                 flex:1;
+                                 padding: 20px ;
+                                 margin-bottom: 20px;
+                                 border: none;
+                                 border-bottom: 1px solid #7e7d87;
+                                 background: transparent;
+                                 color: white;
+                                 font-size: 16px;
+                             }
+                         }
+                         & textarea{
+                             width: 100%;
+                             padding: 20px ;
+                             background: transparent;
+                             border: 1px solid #7e7d87;
+                             color: white;
+                             font-size: 16px;
+                             margin-bottom: 20px;
+                             resize: none;
+                         }
+                         & .btn{
+                             width: 100%;
+                             background: red;
+                             color:white;
+                             font-size: 20px;
+                             padding: 20px 0;
+                             font-weight: 400;
+                             letter-spacing: 1px;
+                             transition: 0.4s;
+                             cursor: pointer;
+                             &:hover{
+                                 background: rgba(202, 8, 8, 0.534);
+                             }
+                         }
+                     } 
+                 }
+             }
+            }
+           
+    }
+    & .footer-bottom{
+        background: #22222d;
+        & .box-container{
+            & .wrap-footer-bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $color5;
+                font-size: 18px;
+                padding: 40px 0;
+                & .contact-us{
+                    display: flex;
+                    align-items: center;
+                    & p{
+                        margin-right: 20px;
+                        text-transform: capitalize;
+                    }
+                    & .icon-contact{
+                        color: white;
+                        font-size: 20px;
+                        & #icon-footer{
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1280px) {
+    footer{
+        & .footer-top{
+            & .box-container{
+                & .wrap-footer-top{
+                    & .form-contact{
+                        & .footer-infor{
+                            & .input-email{
+                                max-width: 100%;
+                               & input{
+                                   width: 100%;
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1023px) {
+    footer{
+        & .footer-top{
+            & .box-container{
+                & .wrap-footer-top{
+                    padding: 60px 0;
+                    & .footer-contact{
+                        margin-bottom: 60px;
+                        & .title{
+                            margin-bottom: 24px;
+                        }
+                        & .sub-title{
+                            font-size: 20px;
+                        }
+                    }
+                    & .logo-footer{
+                        margin-bottom: 40px;
+                        height: 100px;
+                        width: 200px;
+                        object-fit: fill;
+                    }
+                    & .form-contact{
+                        & .footer-infor{
+                            flex-wrap: wrap;
+                            & .footer-title{
+                                margin-bottom: 30px;
+                            }
+                            & .infor-item{
+                                margin-bottom: 26px;
+                                font-size: 16px;
+                            }
+                            & .input-email{
+                                max-width: 100%;
+                               & input{
+                                   width: 100%;
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .footer-bottom{
+            background: #22222d;
+            & .box-container{
+                & .wrap-footer-bottom{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    color: $color5;
+                    font-size: 18px;
+                    padding: 30px 0;
+                    & .contact-us{
+                        display: flex;
+                        margin-bottom: 10px;
+                        & p{
+                            margin-right: 10px;
+                            text-transform: capitalize;
+                        }
+                        & .icon-contact{
+                            color: white;
+                            font-size: 18px;
+                            display: flex;
+                            & #icon-footer{
+                                padding-right: 15px;
+                                margin: auto;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    footer{
+        & .footer-top{
+            & .box-container{
+                & .wrap-footer-top{
+                    padding: 60px 0;
+                    & .footer-contact{
+                        margin-bottom: 60px;
+                        & .title{
+                            margin-bottom: 24px;
+                        }
+                        & .sub-title{
+                            font-size: 20px;
+                        }
+                    }
+                    & .logo-footer{
+                        margin-bottom: 30px;
+                    }
+                    & .form-contact{
+                        & .footer-infor{
+                            
+                            margin-bottom: 30px;
+                            & .footer-title{
+                                margin-bottom: 40px;
+                            }
+                            & .infor-item{
+                                margin-bottom: 26px;
+                                font-size: 16px;
+                            }
+                            & .input-email{
+                               max-width: 100%;
+                               & input{
+                                   height: 20px;
+                               }
+                               & #icon-air{
+                                   width: 60px;
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .footer-bottom{
+            background: #22222d;
+            & .box-container{
+                & .wrap-footer-bottom{
+                    display: flex;
+                    flex-direction: column;
+                    color: $color5;
+                    font-size: 18px;
+                    padding: 30px 0;
+                    & .contact-us{
+                        display: flex;
+                        margin-bottom: 10px;
+                        & p{
+                            margin-right: 10px;
+                            text-transform: capitalize;
+                        }
+                        & .icon-contact{
+                            color: white;
+                            font-size: 18px;
+                            display: flex;
+                            & #icon-footer{
+                                padding-right: 15px;
+                                margin: auto;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:479px) {
+    footer{
+        & .footer-top{
+            & .box-container{
+                & .wrap-footer-top{
+                    padding: 60px 0;
+                    & .footer-contact{
+                        margin-bottom: 60px;
+                        & .title{
+                            margin-bottom: 24px;
+                        }
+                        & .sub-title{
+                            font-size: 20px;
+                        }
+                    }
+                    & .logo-footer{
+                        margin-bottom: 30px;
+                        width: 150px;
+                        height: 80px;
+                        object-fit: fill;
+                    }
+                    & .form-contact{
+                        & .footer-infor{
+                            flex: 1;
+                            margin-bottom: 30px;
+                            & .footer-title{
+                                margin-bottom: 40px;
+                            }
+                            & .infor-item{
+                                margin-bottom: 26px;
+                                font-size: 16px;
+                            }
+                            & .input-email{
+                                & input{
+                                    height: 50px;
+                                }
+                                 & #icon-air{
+                                     width: 60px;
+                                     height: 100%;
+                                 }   
+                            }
+                        }
+                        & .footer-form{
+                            flex:1;
+                            & .input-box{
+                                flex-wrap: wrap;
+                            }
+                            & .btn{
+                                padding: 10px 0;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        & .footer-bottom{
+            background: #22222d;
+            & .box-container{
+                & .wrap-footer-bottom{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    color: $color5;
+                    font-size: 18px;
+                    padding: 30px 0;
+                    & .contact-us{
+                        display: flex;
+                        margin-bottom: 10px;
+                        & p{
+                            margin-right: 10px;
+                            text-transform: capitalize;
+                        }
+                        & .icon-contact{
+                            color: white;
+                            font-size: 18px;
+                            display: flex;
+                            & #icon-footer{
+                                padding-right: 15px;
+                                margin: auto;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
